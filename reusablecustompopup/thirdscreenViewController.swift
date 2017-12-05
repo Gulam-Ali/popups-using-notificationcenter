@@ -1,36 +1,38 @@
 //
-//  FirstViewController.swift
+//  thirdscreenViewController.swift
 //  reusablecustompopup
 //
 //  Created by gulam ali on 03/12/17.
 //  Copyright © 2017 gulam ali. All rights reserved.
-//
+
+
+// this screen is for show time picker not date
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
+class thirdscreenViewController: UIViewController {
     
-    @IBOutlet weak var setdate: UILabel!
     
-    var observerremover : NSObjectProtocol?
-  
+    @IBOutlet weak var settingtIme: UILabel!
+    
+     var observerremover : NSObjectProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-      
+
+        // Do any additional setup after loading the view.
+       
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         // observing notification...
         
-      observerremover = NotificationCenter.default.addObserver(forName: .savedatetime, object: nil, queue: OperationQueue.main) { (notification) in
+        observerremover = NotificationCenter.default.addObserver(forName: .savedatetime, object: nil, queue: OperationQueue.main) { (notification) in
             let datevc = notification.object as! popupViewController
-            self.setdate.text = datevc.dataformatted
+            self.settingtIme.text = datevc.timeformatted
         }
     }
     
@@ -44,24 +46,19 @@ class FirstViewController: UIViewController {
         }
         
     }
+
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "topopup" {
+        if segue.identifier == "topopupfortime"{
             
-            let pop = segue.destination as! popupViewController
-            pop.showtimepicker = false
+            let timepop = segue.destination as! popupViewController
+            timepop.showtimepicker = true
+            
+            
             
         }
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
+    
 }
-

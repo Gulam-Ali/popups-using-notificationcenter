@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3E404A1FD67F1500919EA3 /* notificationnameextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3E40491FD67F1500919EA3 /* notificationnameextension.swift */; };
 		EA6D56641FD44D7C006E3CA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D56631FD44D7C006E3CA8 /* AppDelegate.swift */; };
 		EA6D56661FD44D7C006E3CA8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D56651FD44D7C006E3CA8 /* FirstViewController.swift */; };
 		EA6D56681FD44D7C006E3CA8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D56671FD44D7C006E3CA8 /* SecondViewController.swift */; };
 		EA6D566B1FD44D7C006E3CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D56691FD44D7C006E3CA8 /* Main.storyboard */; };
 		EA6D566D1FD44D7C006E3CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6D566C1FD44D7C006E3CA8 /* Assets.xcassets */; };
 		EA6D56701FD44D7C006E3CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D566E1FD44D7C006E3CA8 /* LaunchScreen.storyboard */; };
+		EA6D56781FD44F14006E3CA8 /* popupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D56771FD44F14006E3CA8 /* popupViewController.swift */; };
+		EA6D567B1FD45351006E3CA8 /* popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D56791FD45351006E3CA8 /* popup.storyboard */; };
+		EA6D567D1FD4554B006E3CA8 /* thirdcreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D567C1FD4554B006E3CA8 /* thirdcreen.storyboard */; };
+		EA6D567F1FD45653006E3CA8 /* thirdscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D567E1FD45653006E3CA8 /* thirdscreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3E40491FD67F1500919EA3 /* notificationnameextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationnameextension.swift; sourceTree = "<group>"; };
 		EA6D56601FD44D7C006E3CA8 /* reusablecustompopup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reusablecustompopup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6D56631FD44D7C006E3CA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6D56651FD44D7C006E3CA8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		EA6D566C1FD44D7C006E3CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6D566F1FD44D7C006E3CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA6D56711FD44D7C006E3CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6D56771FD44F14006E3CA8 /* popupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupViewController.swift; sourceTree = "<group>"; };
+		EA6D567A1FD45351006E3CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = reusablecustompopup/Base.lproj/popup.storyboard; sourceTree = "<group>"; };
+		EA6D567C1FD4554B006E3CA8 /* thirdcreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = thirdcreen.storyboard; sourceTree = "<group>"; };
+		EA6D567E1FD45653006E3CA8 /* thirdscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdscreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				EA6D566C1FD44D7C006E3CA8 /* Assets.xcassets */,
 				EA6D566E1FD44D7C006E3CA8 /* LaunchScreen.storyboard */,
 				EA6D56711FD44D7C006E3CA8 /* Info.plist */,
+				EA6D56791FD45351006E3CA8 /* popup.storyboard */,
+				EA6D56771FD44F14006E3CA8 /* popupViewController.swift */,
+				EA3E40491FD67F1500919EA3 /* notificationnameextension.swift */,
+				EA6D567C1FD4554B006E3CA8 /* thirdcreen.storyboard */,
+				EA6D567E1FD45653006E3CA8 /* thirdscreenViewController.swift */,
 			);
 			path = reusablecustompopup;
 			sourceTree = "<group>";
@@ -129,6 +144,8 @@
 				EA6D56701FD44D7C006E3CA8 /* LaunchScreen.storyboard in Resources */,
 				EA6D566D1FD44D7C006E3CA8 /* Assets.xcassets in Resources */,
 				EA6D566B1FD44D7C006E3CA8 /* Main.storyboard in Resources */,
+				EA6D567D1FD4554B006E3CA8 /* thirdcreen.storyboard in Resources */,
+				EA6D567B1FD45351006E3CA8 /* popup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6D56681FD44D7C006E3CA8 /* SecondViewController.swift in Sources */,
+				EA6D567F1FD45653006E3CA8 /* thirdscreenViewController.swift in Sources */,
 				EA6D56641FD44D7C006E3CA8 /* AppDelegate.swift in Sources */,
 				EA6D56661FD44D7C006E3CA8 /* FirstViewController.swift in Sources */,
+				EA6D56781FD44F14006E3CA8 /* popupViewController.swift in Sources */,
+				EA3E404A1FD67F1500919EA3 /* notificationnameextension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +182,14 @@
 				EA6D566F1FD44D7C006E3CA8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA6D56791FD45351006E3CA8 /* popup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6D567A1FD45351006E3CA8 /* Base */,
+			);
+			name = popup.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
